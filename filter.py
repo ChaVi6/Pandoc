@@ -8,7 +8,7 @@ def headerFilter(elem, doc):
     if isinstance(elem, panflute.Header):
         text = panflute.stringify(elem)
         if text in headers:
-            sys.stderr.write("Header `" + text + "` already exists in document\n")
+            sys.stderr.write("Attention! Header '" + text + "' already exists in document.\n")
         else:
             headers.append(text)
 
